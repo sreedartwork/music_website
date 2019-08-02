@@ -1,0 +1,815 @@
+// Widescreens
+// @include mediaXl {
+//    
+//   }
+// Desktops & Laptops
+@include mediaLg {
+  header {
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    nav {
+      align-self: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #top-section {
+    // display: flex;
+    background: url("/img/source.gif");
+    // background-size: cover;
+    height: 45vh !important;
+    width: 100vw !important;
+  }
+
+  .about-info .logo-centered {
+    padding-top: 15px!important;
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+    max-width: 450px;
+  }
+
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1rem;
+    color: wheat;
+    line-height: 2;
+    padding-left: 20px !important;
+    padding-bottom: 20px;
+    padding-right: 5px !important;
+    /* text-align: center; */
+    // display: block;
+    // justify-content: center !important;
+    text-align: center !important;
+    max-width: 550px;
+  }
+
+  #media .videos {
+    padding: 80px 20px 0; // display: grid;
+  }
+  // .videos {
+  // grid-template-areas:  // grids will stack in the mobile
+  // "video1"
+  // "video2"
+  // "video3"
+  // "video4"
+  // "video5"
+  // "video6";
+  // grid-template-columns: 1fr !important; //since we want 1 stack column
+  // }
+
+  .videos .video {
+    padding-top: 15px!important;
+    padding-right: 6px;
+    padding-left: 6px !important;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  #tour.top-img {
+    background-image: url("/img/rsz_glasses-mos-def.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 250px !important;
+  }
+
+  .tourdates .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-right: 6px;
+    padding-left: 6px !important;
+    justify-content: center;
+  }
+
+  .tourdates .dates li {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .footer {
+    position: relative !important;
+    z-index: 4 !important;
+    padding: 25px !important;
+    text-align: center !important;
+    color: white !important;
+
+    img {
+      max-width: 25px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+}
+// Tablets & Small Laptops
+@include mediaMd {
+  header {
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    nav {
+      align-self: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #top-section {
+    // display: flex;
+    background: url("/img/source.gif");
+    background-size: cover;
+    height: 35vh !important;
+    width: 100vw !important;
+  }
+
+  .about-info {
+    // grids will stack in the mobile
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; //since we want 1 stack column
+  }
+
+  .about-info .logo-centered {
+    padding-top: 15px!important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 350px;
+  }
+
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 2rem;
+    color: wheat;
+    line-height: 2;
+    padding-left: 5px !important;
+    padding-bottom: 20px;
+    padding-right: 5px !important;
+    /* text-align: center; */
+    // display: block;
+    // justify-content: center !important;
+    text-align: center !important;
+    max-width: 760px;
+  }
+
+  #media .videos {
+    padding: 80px 20px 0; // display: grid;
+  }
+
+  .videos {
+    // grids will stack in the mobile
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+    grid-template-columns: 1fr !important; //since we want 1 stack column
+  }
+
+  .videos .video {
+    padding-top: 15px!important;
+    padding-right: 6px;
+    padding-left: 6px !important;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  #tour.top-img {
+    background-image: url("/img/rsz_glasses-mos-def.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 250px !important;
+  }
+
+  .tourdates .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-right: 6px;
+    padding-left: 6px !important;
+    justify-content: center;
+  }
+
+  .tourdates .dates li {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .footer {
+    position: relative !important;
+    z-index: 4 !important;
+    padding: 25px !important;
+    text-align: center !important;
+    color: white !important;
+
+    img {
+      max-width: 25px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+}
+///////////////////////////////////////////////////////
+// @mixin media375  {
+//   header {
+//     position: absolute;
+//     z-index: 3;
+//     padding: 15px;
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+//
+//     .logo {
+//       width: 50px;
+//       display: none;
+//
+//       img {
+//         width: 100%;
+//       }
+//     }
+//
+//     .header nav {
+//       align-self: center;
+//       width: 360px !important;
+//       align-content: center !important;
+//
+//       a {
+//         color: white;
+//         text-decoration: none;
+//         font-size: 1.2rem;
+//         font-weight: 300;
+//         padding: 0 10px;
+//       }
+//     }
+//   }
+//
+//   #top-section {
+//     background: url("/img/source.gif");
+//     background-size: cover;
+//     height: 38vh !important;
+//     width: 100% !important;
+//   }
+//
+//   .about-info {
+//     // grids will stack in the mobile
+//     grid-template-areas: "bioimage" "bio";
+//     grid-template-columns: 1fr; //since we want 1 stack column
+//   }
+//
+//   .about-info .logo-centered {
+//     padding-top: 15px!important;
+//     padding-right: 0 !important;
+//     padding-left: 0 !important;
+//     max-width: 350px;
+//   }
+//
+//   .about-info .bio {
+//     grid-area: bio;
+//     font-size: 2rem;
+//     color: wheat;
+//     line-height: 2;
+//     padding-left: 5px !important;
+//     padding-bottom: 20px;
+//     padding-right: 5px !important;
+//     /* text-align: center; */
+//     // display: block;
+//     // justify-content: center !important;
+//     text-align: center !important;
+//     width: 400px;
+//
+//     p {
+//       text-align: center;
+//     }
+//   }
+//
+//
+//   #media .videos {
+//     padding: 80px 20px 0;
+//     // display: grid;
+//   }
+//
+//   .videos {
+//     // grids will stack in the mobile
+//     grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+//     grid-template-columns: 1fr !important; //since we want 1 stack column
+//   }
+//
+//   .videos .video {
+//     padding-top: 15px!important;
+//     padding-right: 6px;
+//     padding-left: 6px !important;
+//
+//     iframe {
+//       width: 100%;
+//     }
+//   }
+//
+//   #tour.top-img {
+//     background-image: url("/img/rsz_glasses-mos-def.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center center;
+//     background-color: #f5dc65;
+//     background-blend-mode: multiply;
+//     height: 250px !important;
+//   }
+//
+//   .tourdates .dates {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 20px;
+//     padding-right: 6px;
+//     padding-left: 6px !important;
+//     justify-content: center;
+//   }
+//
+//   .tourdates .dates li {
+//     justify-content: center !important;
+//     text-align: center;
+//   }
+//
+//   footer {
+//     position: relative !important;
+//     z-index: 4 !important;
+//     padding: 25px !important;
+//     text-align: center !important;
+//     color: white !important;
+//
+//     img {
+//       max-width: 25px;
+//       padding-bottom: 10px;
+//     }
+//
+//     a {
+//       color: red;
+//       text-decoration: none;
+//     }
+//   }
+// }
+// Smartphones
+@include mediaSm {
+  header {
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+      display: none;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header nav {
+      align-self: center;
+      width: 360 !important;
+      align-content: center !important;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #top-section {
+    background: url("/img/source.gif");
+    background-size: cover;
+    height: 28vh !important;
+    width: 100% !important;
+  }
+
+  .about-info {
+    // grids will stack in the mobile
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; //since we want 1 stack column
+  }
+
+  .about-info .logo-centered {
+    padding-top: 15px!important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 350px;
+  }
+
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 2rem;
+    color: wheat;
+    line-height: 2;
+    padding-left: 5px !important;
+    padding-bottom: 20px;
+    padding-right: 5px !important;
+    /* text-align: center; */
+    // display: block;
+    // justify-content: center !important;
+    text-align: center !important;
+    width: 400px;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  #media .videos {
+    padding: 80px 20px 0;
+    // display: grid;
+  }
+
+  .videos {
+    // grids will stack in the mobile
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+    grid-template-columns: 1fr !important; //since we want 1 stack column
+  }
+
+  .videos .video {
+    padding-top: 15px!important;
+    padding-right: 6px;
+    padding-left: 6px !important;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  #tour.top-img {
+    background-image: url("/img/rsz_glasses-mos-def.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 250px !important;
+  }
+
+  .tourdates .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-right: 6px;
+    padding-left: 6px !important;
+    justify-content: center;
+  }
+
+  .tourdates .dates li {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  footer {
+    position: relative !important;
+    z-index: 4 !important;
+    padding: 25px !important;
+    text-align: center !important;
+    color: white !important;
+
+    img {
+      max-width: 25px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
+/////////  SMALL   ////////
+// Smartphones
+@include mediaXs {
+  header {
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+      display: none;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header nav {
+      align-self: center;
+      width: 360 !important;
+      align-content: center !important;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #top-section {
+    background: url("/img/source.gif");
+    background-size: cover;
+    height: 28vh !important;
+    width: 100% !important;
+  }
+
+  .about-info {
+    // grids will stack in the mobile
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; //since we want 1 stack column
+  }
+
+  .about-info .logo-centered {
+    align-content: center;
+    padding-top: 2px!important;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+    max-width: 340px;
+    margin: 3px;
+  }
+
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 2rem;
+    color: wheat;
+    line-height: 2;
+    padding-left: 5px !important;
+    padding-bottom: 20px;
+    padding-right: 5px !important;
+    /* text-align: center; */
+    // display: block;
+    // justify-content: center !important;
+    text-align: center !important;
+    max-width: 350px;
+  }
+
+  #media .videos {
+    padding: 80px 32px 0; // display: grid;
+  }
+
+  .videos {
+    // grids will stack in the mobile
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+    grid-template-columns: 1fr !important; //since we want 1 stack column
+  }
+
+  .videos .video {
+    padding-top: 15px!important;
+    padding-right: 6px;
+    padding-left: 6px !important;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  #tour.top-img {
+    background-image: url("/img/rsz_glasses-mos-def.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 250px !important;
+  }
+
+  .tourdates .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-right: 6px;
+    padding-left: 6px !important;
+    justify-content: center;
+  }
+
+  .tourdates .dates li {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  footer {
+    position: relative !important;
+    z-index: 4 !important;
+    padding: 25px !important;
+    text-align: center !important;
+    color: white !important;
+
+    img {
+      max-width: 25px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
+/////////  EX-SMALL   ////////
+@include mediaXxs {
+  header {
+    position: absolute;
+    z-index: 3;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .logo {
+      width: 50px;
+      display: none;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header nav {
+      align-self: center;
+      width: 320px !important;
+      align-content: center !important;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #top-section {
+    align-content: center !important;
+    background: url("/img/source.gif");
+    background-size: cover;
+    height: 28vh !important;
+    width: 105vw !important;
+    max-width: 320px !important;
+  }
+
+  #about {
+    align-content: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    img {
+      width: 315px;
+    }
+  }
+
+  .about-info {
+    // grids will stack in the mobile
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; //since we want 1 stack column
+  }
+
+  .about-info .logo-centered {
+    align-content: center;
+    padding-top: 2px!important;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+    max-width: 315px !important;
+    margin: 3px;
+  }
+
+  .about-info .bio p {
+    align-content: center;
+    grid-area: bio;
+    font-size: 2rem;
+    color: wheat;
+    line-height: 2;
+    padding-left: 5px !important;
+    padding-bottom: 20px;
+    padding-right: 5px !important;
+    /* text-align: center; */
+    // display: block;
+    // justify-content: center !important;
+    text-align: center !important;
+    max-width: 315px;
+  }
+
+  #media .videos {
+    padding: 80px 32px 0; // display: grid;
+  }
+
+  .videos {
+    // grids will stack in the mobile
+    grid-template-areas: "video1" "video2" "video3" "video4" "video5" "video6";
+    grid-template-columns: 1fr !important; //since we want 1 stack column
+  }
+
+  .videos .video {
+    padding-top: 15px!important;
+    padding-right: 6px;
+    padding-left: 6px !important;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  #tour.top-img {
+    background-image: url("/img/rsz_glasses-mos-def.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 250px !important;
+  }
+
+  .tourdates .dates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-right: 6px;
+    padding-left: 6px !important;
+    justify-content: center;
+  }
+
+  .tourdates .dates li {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  footer {
+    position: relative !important;
+    z-index: 4 !important;
+    padding: 25px !important;
+    text-align: center !important;
+    color: white !important;
+
+    img {
+      max-width: 25px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}

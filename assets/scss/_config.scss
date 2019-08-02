@@ -1,0 +1,75 @@
+// $primary-color: rgb(0, 0, 0);
+// $secondary-color: rgb(0, 197, 164);
+// $show-home-image: true;
+// $home-image: url(../img/GATE.jpg);
+// $background-opacity: 0.2;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        //sudo element in place of class of "overlay" in body of html to sit in front of bg-img make to put content to use before or after//
+
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; //negative # to make sure it sits behind name
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
+@mixin mediaXxs {
+  @media screen and (max-width: 320px)  {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}
+@mixin mediaXs {
+  @media screen and (max-width: 360px) {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}
+@mixin mediaSm {
+  @media screen and (min-width: 361px) and (max-width: 411px) {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}
+
+@mixin mediaMd {
+  @media screen  and (min-width: 412px) and (max-width: 768px) {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content; //putting content allows us to use this mixin in other places in our markup
+  }
+}

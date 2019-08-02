@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "config";
+@import "reset";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #231a15;
+  // height: 100%;
+  // margin: 0;
+}
+
+header {
+  position: absolute;
+  z-index: 3;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .logo {
+    width: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    align-self: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding: 0 10px;
+    }
+  }
+}
+
+#top-section {
+  background: url("/img/source.gif");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+  //GRID SET UP
+.about-info {
+
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: //this is how the grids will stack in the site
+    "bio bio bioimage";
+    // "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .text-secondary{
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 0.5em;
+
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    color:wheat;
+    line-height: 2;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .logo-centered {
+    grid-area: url("/img/source.gif"); //same name as above on line 80
+    margin: auto;
+    padding-top: 150px;
+    padding-right:40px;
+    padding-left: 60px;
+    // border-radius: 50%;
+    // border: $secondary-color 3px solid;
+  }
+
+}
+
+
+
+#media {
+  padding: 100px 0;
+  background-image: url("/img/brooklyn_bridge.jpg");
+  width: 100%px;
+  background-size: cover;
+  // filter: blur(20px);
+  .title {
+    background: #cdbcb2;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    // margin: 0 0 80px;
+}
+  }
+
+  .videos {
+    // padding: 80px 50px 0;
+    align-content: center;
+    padding-top:50px;
+    padding-right:50px;
+    padding-left:50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    // grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+
+    .video {
+      border-radius: 4px;
+      overflow: hidden;
+      height: 300px;
+      // -webkit-box-shadow: 0 5px 24px -8px rgba(0,0,0,0.75);
+      // -moz-box-shadow: 0 5px 24px -8px rgba(0,0,0,0.75);
+      // box-shadow: 0 5px 24px -8px rgba(0,0,0,0.75);
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+
+
+#music {
+  padding: 80px 0;
+  position: relative;
+
+  .container {
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+  }
+
+  .info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .sub-title {
+      font-size: 1.7rem;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 100px;
+    }
+
+    .singles {
+      width: 400px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-bottom: 80px;
+
+      li {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+    }
+  }
+
+  .album-cover {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+#tour {
+  position: relative;
+  z-index: 4;
+
+  .top-img {
+    background-image: url("/img/Glasses-mos-def.png");
+    // background-image: url("/img/source.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #f5dc65;
+    background-blend-mode: multiply;
+    height: 800px;
+  }
+
+  .tourdates {
+    // background-image: url("/img/top_mos.jpg");
+    // background: #231a15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .title {
+      background: #cdbcb2;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    margin: 0 0 80px;
+    }
+
+    .dates {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      // max-width: 800px;
+      li {
+        color: white;
+        font-size: 1.3rem;
+
+        span {
+          padding: 0 10px;
+        }
+
+        .city {
+          font-weight: 700;
+        }
+
+        .location {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        .date {
+          font-weight: 500;
+          color: #f5dc65;
+        }
+      }
+    }
+  }
+
+
+}
+#footer {
+
+  position: relative !important;
+  z-index: 4 !important;
+  padding: 25px !important;
+  // text-align: center !important;
+  color: white !important;
+
+  .img {
+    max-width: 25px;
+  }
+
+  .copyright  {
+    color:white;
+
+    a{
+      color:red !important;
+      text-decoration: none;
+
+    }
+  }
+}
+
+@import "mobile";
