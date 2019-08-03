@@ -3,13 +3,15 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https:sreedartwork.github.io/music_website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "dev:webpack": "webpack --mode development --env.NODE_ENV=dev",
     "build:webpack": "webpack --mode production --env.NODE_ENV=production",
     "watch": "gulp",
-    "proxy": "gulp watch-proxy"
+    "proxy": "gulp watch-proxy",
+    "deploy": "gh-pages -d public"
   },
   "author": "",
   "license": "ISC",
@@ -55,6 +57,7 @@
     "@babel/plugin-proposal-decorators": "^7.1.6",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "gh-pages": "^2.0.1",
     "webpack-dev-server": "^3.1.14"
   }
 }
